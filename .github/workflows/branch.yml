@@ -9,7 +9,7 @@ jobs:
         uses: browser-actions/setup-chrome@latest
         with:
           install-chromedriver: true
-          isntall-dependencies: true
+          install-dependencies: true
 
       - name: Check chrome version
         run: chrome --version
