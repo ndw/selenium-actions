@@ -1,0 +1,14 @@
+name: build-branch
+on: push
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
+        run: chrome --version
+
+      - name: Setup Firefox
+        uses: browser-actions/setup-firefox@latest
+        run: firefox --version
